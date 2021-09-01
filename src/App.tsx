@@ -1,7 +1,9 @@
+import { Header } from './components/Header/Header';
+
 function App() {
    return (
-      <div className='App'>
-         <h1>Lohono Assignment</h1>
+      <div className='container'>
+         <Header />
       </div>
    );
 }
