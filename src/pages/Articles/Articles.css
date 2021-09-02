@@ -1,0 +1,25 @@
+.article__details {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.article__context--items {
+   display: none;
+}
+
+.article__context__menu--dots {
+   cursor: pointer;
+   font-size: 2rem;
+}
+
+@media (min-width: 840px) {
+   .articles {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 5rem;
+   }
+}

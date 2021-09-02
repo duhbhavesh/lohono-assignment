@@ -1,0 +1,13 @@
+.article__card {
+   width: 80%;
+   margin: 0 auto;
+   padding-bottom: 2rem;
+   margin-bottom: 1rem;
+   border-radius: 1rem;
+}
+
+@media (min-width: 840px) {
+   .article__card {
+      width: 30%;
+   }
+}

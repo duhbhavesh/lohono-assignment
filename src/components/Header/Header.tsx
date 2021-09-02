@@ -1,7 +1,13 @@
 import { FC } from 'react';
+import { useData } from '../../context/DataContext';
 import './Header.css';
 
 export const Header: FC = () => {
+   const {
+      state: { page },
+      dispatch,
+   } = useData();
+
    return (
       <>
          <div className='container'>
@@ -16,10 +22,16 @@ export const Header: FC = () => {
                      />
                   </div>
                   <div className='header__btns'>
-                     <button className='header__btn header__btn--prev'>
+                     <button
+                        disabled={page <= 1}
+                        onClick={() => dispatch({ type: 'PREV_PAGE' })}
+                        className='header__btn header__btn--prev'>
                         Prev
                      </button>
-                     <button className='header__btn header__btn--next'>
+                     <button
+                        disabled={page >= 9}
+                        onClick={() => dispatch({ type: 'NEXT_PAGE' })}
+                        className='header__btn header__btn--next'>
                         Next
                      </button>
                   </div>
