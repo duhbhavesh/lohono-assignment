@@ -19,6 +19,12 @@ export const Header: FC = () => {
                         className='header__search--input'
                         type='search'
                         placeholder='Search'
+                        onChange={(event) => {
+                           dispatch({
+                              type: 'SEARCH',
+                              payload: event.target.value,
+                           });
+                        }}
                      />
                   </div>
                   <div className='header__btns'>

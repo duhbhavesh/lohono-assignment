@@ -5,15 +5,19 @@ import './Articles.css';
 
 export const Articles: FC = () => {
    const {
-      state: { articles },
+      state: { articles, search },
    } = useData();
 
    return (
       <>
          <div className='articles'>
-            {articles.map((article) => {
-               return <ArticleCard key={article.id} article={article} />;
-            })}
+            {articles
+               .filter((query) =>
+                  query.title.toLowerCase().includes(search.toLowerCase()),
+               )
+               .map((article) => {
+                  return <ArticleCard key={article.id} article={article} />;
+               })}
          </div>
       </>
    );

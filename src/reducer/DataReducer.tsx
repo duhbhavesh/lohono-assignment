@@ -26,6 +26,12 @@ export const DataReducer = (
             page: prevPage,
          };
 
+      case 'SEARCH':
+         return {
+            ...state,
+            search: action.payload,
+         };
+
       default:
          return state;
    }

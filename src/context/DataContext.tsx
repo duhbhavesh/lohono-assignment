@@ -7,6 +7,7 @@ import { DataContextType } from './DataContext.types';
 export const initialState: NewsArticles = {
    articles: [],
    page: 1,
+   search: '',
 };
 
 const DataContext = createContext<DataContextType>({

@@ -8,6 +8,7 @@ export type NewsArticle = {
 export type NewsArticles = {
    articles: NewsArticle[];
    page: number;
+   search: string;
 };
 
 export type NewsData = NewsArticle[];

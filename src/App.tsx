@@ -16,6 +16,7 @@ function App() {
             console.log(data);
             dispatch({ type: 'SET_ARTICLES', payload: data });
          });
+         console.log(getNewArticles);
       } catch {
          console.log('error');
       }
