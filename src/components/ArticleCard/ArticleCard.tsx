@@ -1,10 +1,6 @@
 import { useState } from 'react';
-import { NewsArticle } from '../../services/getNewArticles.types';
 import './ArticleCard.css';
-
-type ArticleProp = {
-   article: NewsArticle;
-};
+import { ArticleProp } from './ArticleCard.types';
 
 export const ArticleCard = ({ article }: ArticleProp) => {
    const [contextMenu, setContextMenu] = useState<boolean>(false);
