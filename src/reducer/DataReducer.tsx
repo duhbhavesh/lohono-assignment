@@ -1,4 +1,4 @@
-import { NewsArticles } from '../services/getNewArticles.types';
+import { NewsArticles } from '../context/DataContext.types';
 import { ActionType } from './DataReducer.types';
 
 export const DataReducer = (

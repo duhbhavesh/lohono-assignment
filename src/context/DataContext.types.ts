@@ -1,7 +1,15 @@
 import React from 'react';
-import { NewsArticles } from '../services/getNewArticles.types';
+import { NewsArticle } from '../services/getNewArticles.types';
 
 export type DataContextType = {
    state: NewsArticles;
    dispatch: React.Dispatch<any>;
 };
+
+export type NewsArticles = {
+   articles: NewsArticle[];
+   page: number;
+   search: string;
+};
+
+export type NewsData = NewsArticle[];

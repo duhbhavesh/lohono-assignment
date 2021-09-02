@@ -1,4 +1,4 @@
-import { NewsData } from '../services/getNewArticles.types';
+import { NewsData } from '../context/DataContext.types';
 
 export type ActionType =
    | { type: 'SET_ARTICLES'; payload: NewsData }

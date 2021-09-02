@@ -1,8 +1,7 @@
 import { useContext, useReducer } from 'react';
 import { createContext, FC } from 'react';
 import { DataReducer } from '../reducer/DataReducer';
-import { NewsArticles } from '../services/getNewArticles.types';
-import { DataContextType } from './DataContext.types';
+import { DataContextType, NewsArticles } from './DataContext.types';
 
 export const initialState: NewsArticles = {
    articles: [],
