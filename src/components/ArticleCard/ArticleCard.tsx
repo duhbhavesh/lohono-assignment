@@ -1,4 +1,4 @@
-import { ContextMenu } from '../Menus/ContextMenu/ContextMenu';
+import { ContextMenu } from '../../components';
 import { ArticleProp } from './ArticleCard.types';
 import './ArticleCard.css';
 

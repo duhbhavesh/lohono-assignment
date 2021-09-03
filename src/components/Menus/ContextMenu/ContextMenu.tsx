@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ContextMenuButton } from '../../Buttons/ContextMenuButton/ContextMenuButton';
+import { ContextMenuButton } from '../../../components';
 import './ContextMenu.css';
 
 export const ContextMenu = ({ article }: any) => {

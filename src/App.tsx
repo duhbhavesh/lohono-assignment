@@ -1,5 +1,5 @@
-import { Header } from './components/Header/Header';
-import { Articles } from './pages/Articles/Articles';
+import { Header } from './components';
+import { Articles } from './pages';
 
 function App() {
    return (

@@ -1,9 +1,6 @@
 import { NewsArticle } from './getNewArticles.types';
 
-export default async function getNewArticles(
-   page: number = 1,
-   search?: string,
-) {
+export const getNewArticles = async (page: number = 1, search?: string) => {
    let compiled: NewsArticle[] = Array.from({ length: 100 }, (_, offset) => {
       const article: NewsArticle = {
          id: offset,
@@ -19,4 +16,4 @@ export default async function getNewArticles(
    }
    compiled = compiled.slice(page * 10, page * 10 + 10);
    return compiled;
-}
+};

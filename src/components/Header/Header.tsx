@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { useData } from '../../context/DataContext';
-import { PageButton } from '../Buttons/PageButton/PageButton';
-import { Search } from '../Search/Search';
+import { useData } from '../../context';
+import { PageButton } from '../../components';
+import { Search } from '../../components';
 import './Header.css';
 
 export const Header: FC = () => {

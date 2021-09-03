@@ -5,6 +5,9 @@
    border: 1px solid #ced4df;
    padding: 0.6rem 0.9rem 0.6rem 0.9rem;
    font-weight: 600;
-   margin-left: 0.5rem;
    font-family: inherit;
+}
+
+.header__btn:not(:last-child) {
+   margin-right: 0.5rem;
 }

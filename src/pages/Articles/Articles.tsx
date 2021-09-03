@@ -1,9 +1,9 @@
 import { FC, useEffect } from 'react';
-import { ArticleCard } from '../../components/ArticleCard/ArticleCard';
-import { NoResultFound } from '../../components/NoResultFound/NoResultFound';
-import { useData } from '../../context/DataContext';
-import getNewArticles from '../../services/getNewArticles';
-import { getfilterdData } from '../../utils/utils';
+import { useData } from '../../context';
+import { ArticleCard } from '../../components';
+import { NoResultFound } from '../../components';
+import { getNewArticles } from '../../services';
+import { getfilterdData } from '../../utils';
 import './Articles.css';
 
 export const Articles: FC = () => {

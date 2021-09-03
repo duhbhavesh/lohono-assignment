@@ -1,0 +1,1 @@
+export { getNewArticles } from './getNewArticles';
