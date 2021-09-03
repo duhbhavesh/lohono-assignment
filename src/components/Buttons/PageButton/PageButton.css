@@ -1,0 +1,10 @@
+.header__btn {
+   cursor: pointer;
+   background-color: #fff;
+   border-radius: 0.3rem;
+   border: 1px solid #ced4df;
+   padding: 0.6rem 0.9rem 0.6rem 0.9rem;
+   font-weight: 600;
+   margin-left: 0.5rem;
+   font-family: inherit;
+}

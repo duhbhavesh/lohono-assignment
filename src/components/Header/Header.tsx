@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import { useData } from '../../context/DataContext';
+import { PageButton } from '../Buttons/PageButton/PageButton';
+import { Search } from '../Search/Search';
 import './Header.css';
 
 export const Header: FC = () => {
@@ -8,6 +10,14 @@ export const Header: FC = () => {
       dispatch,
    } = useData();
 
+   const handleNextClick = () => {
+      dispatch({ type: 'NEXT_PAGE' });
+   };
+
+   const handlePrevClick = () => {
+      dispatch({ type: 'PREV_PAGE' });
+   };
+
    return (
       <>
          <div className='container'>
@@ -15,31 +25,19 @@ export const Header: FC = () => {
                <div className='header__logo'>News Articles</div>
                <div className='header__actions'>
                   <div className='header__search'>
-                     <input
-                        className='header__search--input'
-                        type='search'
-                        placeholder='Search'
-                        onChange={(event) => {
-                           dispatch({
-                              type: 'SEARCH',
-                              payload: event.target.value,
-                           });
-                        }}
-                     />
+                     <Search />
                   </div>
                   <div className='header__btns'>
-                     <button
-                        disabled={page <= 1}
-                        onClick={() => dispatch({ type: 'PREV_PAGE' })}
-                        className='header__btn header__btn--prev'>
-                        Prev
-                     </button>
-                     <button
-                        disabled={page >= 9}
-                        onClick={() => dispatch({ type: 'NEXT_PAGE' })}
-                        className='header__btn header__btn--next'>
-                        Next
-                     </button>
+                     <PageButton
+                        text={'Prev'}
+                        page={page <= 1}
+                        func={handlePrevClick}
+                     />
+                     <PageButton
+                        text={'Next'}
+                        page={page >= 9}
+                        func={handleNextClick}
+                     />
                   </div>
                </div>
             </header>
