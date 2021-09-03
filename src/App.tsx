@@ -1,7 +1,11 @@
+import { Header } from './components';
+import { Articles } from './pages';
+
 function App() {
    return (
-      <div className='App'>
-         <h1>Lohono Assignment</h1>
+      <div className='container'>
+         <Header />
+         <Articles />
       </div>
    );
 }

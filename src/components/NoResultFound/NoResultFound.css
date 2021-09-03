@@ -1,0 +1,11 @@
+.no__result {
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 2rem;
+   text-align: center;
+}
+
+.no__result--title {
+   font-size: 1.5rem;
+   font-weight: 700;
+}

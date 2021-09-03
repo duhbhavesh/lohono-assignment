@@ -1,0 +1,1 @@
+export { getfilterdData } from './utils';

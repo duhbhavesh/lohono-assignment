@@ -1,0 +1,14 @@
+.articles {
+   margin-top: 4rem;
+   margin-bottom: 4rem;
+}
+
+@media (min-width: 840px) {
+   .articles {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 5rem;
+   }
+}
