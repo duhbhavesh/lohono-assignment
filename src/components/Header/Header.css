@@ -3,6 +3,15 @@
    justify-content: space-between;
    flex-direction: column;
    margin-top: 2rem;
+   background-color: #f9f9f9;
+   border-radius: 0.3rem;
+   padding: 1rem;
+}
+
+.header__logo {
+   font-weight: 700;
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
 }
 
 .header__actions {
@@ -11,8 +20,38 @@
    flex-direction: column;
 }
 
+.header__search--input {
+   padding: 0.5rem;
+   width: 100%;
+}
+
+.header__btns {
+   margin-top: 1rem;
+}
+
+.header__btn {
+   cursor: pointer;
+   padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+}
+
+.header__btn--prev {
+   margin-right: 0.5rem;
+}
+
 @media (min-width: 840px) {
    .header__actions {
       flex-direction: row;
+   }
+
+   .header__search {
+      width: 60%;
+   }
+
+   .header__search--input {
+      width: 50%;
+   }
+
+   .header__btns {
+      margin-top: 0;
    }
 }
