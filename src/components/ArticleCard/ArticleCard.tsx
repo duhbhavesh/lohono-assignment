@@ -31,7 +31,9 @@ export const ArticleCard = ({ article }: ArticleProp) => {
                         Edit
                      </li>
                      <li
-                        onClick={() => handleContextMenuBtn(article.id, 'Delete')}
+                        onClick={() =>
+                           handleContextMenuBtn(article.id, 'Delete')
+                        }
                         className='article__context--item'>
                         Delete
                      </li>
