@@ -1,0 +1,14 @@
+.article__context--btn {
+   cursor: pointer;
+   text-align: left;
+   background-color: #fff;
+   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+   margin-bottom: 0.1rem;
+   font-size: 0.8rem;
+   border-style: none;
+}
+
+.article__context--btn:hover {
+   background-color: #8d31d8;
+   color: #fff;
+}

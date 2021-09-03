@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { ArticleCard } from '../../components/ArticleCard/ArticleCard';
 import { NoResultFound } from '../../components/NoResultFound/NoResultFound';
 import { useData } from '../../context/DataContext';
