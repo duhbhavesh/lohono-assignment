@@ -1,10 +1,6 @@
-import { FC, MouseEventHandler } from 'react';
+import { FC } from 'react';
 import './ContextMenuButton.css';
-
-type ContextMenuButtonProp = {
-   func: MouseEventHandler;
-   text: string;
-};
+import { ContextMenuButtonProp } from './ContextMenuButton.types';
 
 export const ContextMenuButton: FC<ContextMenuButtonProp> = ({
    func,
